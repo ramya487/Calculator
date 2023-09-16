@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Calculator</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <div class="sidebar" id="sidebar">
+      <button onclick="clearHistory()">Clear History</button>
+      <div id="textcontent"></div>
+    </div>
+    <div class="flex-container">
+      <div class="wrapper">
+        <div class="content" id="content"></div>
+        <div class="grid-container">
+          <button class="span" onclick="clearr()">Clear</button>
+          <button onclick="dell()">Del</button>
+          <button id="add" onclick="fn(this.id)">+</button>
+          <button id="nine" onclick="fn(this.id)">9</button>
+          <button id="eight" onclick="fn(this.id)">8</button>
+          <button id="senven" onclick="fn(this.id)">7</button>
+          <button id="sub" onclick="fn(this.id)">-</button>
+          <button id="six" onclick="fn(this.id)">6</button>
+          <button id="five" onclick="fn(this.id)">5</button>
+          <button id="four" onclick="fn(this.id)">4</button>
+          <button id="mul" onclick="fn(this.id)">*</button>
+          <button id="three" onclick="fn(this.id)">3</button>
+          <button id="two" onclick="fn(this.id)">2</button>
+          <button id="one" onclick="fn(this.id)">1</button>
+          <button id="div" onclick="fn(this.id)">/</button>
+          <button class="span" id="zero" onclick="fn(this.id)">0</button>
+          <button id="decimalpt" onclick="fn(this.id)">.</button>
+          <button onclick="onclic()" id="result">=</button>
+          <button id="history" onclick="history()">History</button>
+        </div>
+      </div>
+    </div>
+    <script src="./script.js"></script>
+  </body>
+</html>
